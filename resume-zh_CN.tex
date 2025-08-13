@@ -1,0 +1,240 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{amsmath}
+\usepackage{cite}
+\usepackage{pifont}
+\usepackage{hyperref}
+% 禁用分页
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{程志祥}
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+
+\contactInfo{男/2026届}{(+86) 198-5560-3646}{willchan2312@gmail.com}{}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+
+% \section{个人总结}
+% 本人在校成绩优秀、乐观向上，工作负责、自我驱动力强、热爱尝试新事物，认同开放、连接、共享的Web在未来的不可替代性。在校期间长期从事可视分析(Web的2D/3D时空可视化)相关研究，对Web技术发展趋势及前端工程化解决方案有浓厚兴趣。\textbf{现任职于 BAT 集团。}
+
+% \section{\faGraduationCap\ 教育背景}
+\section{教育背景}
+\datedsubsection{
+  {\large \textbf{华东师范大学(985)}}，GIS教育部重点实验室，测绘工程}{2023.09 -~~\hspace{0.25em}至今\hspace{0.25em}~~}
+{\small GPA: 3.59 (前20\%)，发表SCI论文2篇，华东师范大学学业奖学金2次， IEEE Student member\\
+  主修课程: 人工智能的数学方法、数据挖掘与信息分析、GIS程序设计及软件应用}
+\vspace{0.1cm}
+\datedsubsection{
+  {\large \textbf{合肥工业大学(211)}}，地理信息科学}{2018.09 - 2022.06}
+{\small GPA: 3.0~~(前40\%)，国家励志奖学金，科技竞赛奖2次，软件著作权2个\\
+  主修课程: 空间数据结构、空间数据库、面向对象程序设计、WebGIS原理与开发}
+
+% \vspace{0.2cm}
+% \section{\faCogs\ IT 技能}
+\section{技术能力}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+
+  \item \textbf{编程语言与框架}: 了解Java~(JVM、SpringBoot、Mybatis)~/~了解Python~(Fastapi、PyTorch)~/~了解SQL~
+  \vspace{0.1cm}
+  \item \textbf{其它技术}: 了解Linux / 了解MySQL / 了解Redis / 了解Git / 了解Vim / 了解Docker / 了解RabbitMQ
+  \vspace{0.1cm}
+  \item \textbf{关键词}: 后端开发，AI软件开发，深度学习，计算机视觉，数据爬虫
+
+\end{itemize}
+% \vspace{0.2cm}
+
+\section{实习经历}
+\datedsubsection{
+  {\large \textbf{字节跳动}}，TikTok国际支付，测试开发工程师}{2025.04 - 2025.06}
+\begin{itemize}[parsep=0.2ex]
+  {\small 
+  \item \textbf{WalletEngine服务维护}: 用于测试过程钱包造数，通过模块化设计提升钱包业务造数效率。
+  \vspace{0.1cm}
+  \item \textbf{Pytest自动化框架开发}: 维护FundProd场景内自动化用例与服务，并针对基于供应商付款新链路的Transfer服务，构建自动化测试用例架构，完成核心RPC接口的标准化测试覆盖，助力下游服务联调效率。   
+  \vspace{0.1cm}
+  \item \textbf{RTC场景测试}: 围绕RTC(Refund to Credit)模块业务场景，设计并执行多维度测试方案，覆盖80+正常流程及异常边界情况，累计发现并跟进解决多项影响业务稳定性的潜在问题。}
+\end{itemize}
+% \vspace{0.2cm}
+
+% \datedsubsection{
+%   {\large \textbf{蔚来汽车}}，数字系统，软件开发工程师}{2024.12 - 2025.3}
+% \begin{itemize}[parsep=0.2ex]
+%   {\small 
+%   \item \textbf{Java自动化工具开发}: 基于飞书JavaSDK与原生API, 在Android以及Java后端上开发一套公司内部工具，包括定时抓取指定时段的日志，分片上传至飞书文档，自动解析日志的内容，云端同步状态，通过飞书机器人实现自动转发等。
+%   \vspace{0.1cm}
+%   \item \textbf{PyQT测试平台开发}: 基于PyQT5开发跨平台工具，实现图形界面的CDF连接、SAF连接、一键部署执行测试CASE、抓取日志、执行shell脚本，极大提高测试人员效率。
+%   \vspace{0.1cm}
+%   }
+% \end{itemize}
+% \vspace{0.2cm}
+\datedsubsection {{\large \textbf{蔚来汽车}}，数字系统，软件开发工程师}{2024.12 - 2025.03}
+\begin {itemize}
+{\small
+\item \textbf {工作内容:} 从0开发部门级中台工具，基于飞书JavaSDK与原生 API，解决汽车终端与机房物理隔离导致的日志获取难题，依托终端联网能力构建自动化日志处理体系，实现上下游协同。
+\item \textbf {核心功能:}
+设计手动触发与定时任务兜底策略抓取终端日志，采用分片上传策略同步至飞书云文档，通过飞书机器人自动转发问题日志至下游AI MCP域进行日志解析，并溯源至具体业务域，实现 "终端采集-云端存储-智能解析-域级溯源"闭环；
+\item \textbf {业务价值:} 替代人工拷贝日志低效模式，将日志获取时效从小时级提升至分钟级；通过与 AI MCP 团队协同，实现日志解析专业化分工；依托飞书机器人自动转发与域级溯源能力，提升跨团队问题排查效率 30\% 以上。
+}
+\end {itemize}
+\section{项目作品}
+% \datedsubsection{\textbf{Tlias智能学习辅助管理系统}}{}
+% \begin{itemize}[parsep=0.2ex]
+%   {\small \item 简介: 使用SpringBoot、Mybatis和 MySQL实现了CRUD操作和分页查询功能，并集成阿里云OSS进行用户数据存储与管理。同时，基于JWT实现了令牌认证与登录校验，增强了系统安全性。通过应用过滤器和拦截器，优化了请求和响应处理过程，提升了系统性能与可扩展性。
+%   \item 收获: 了解Java后端开发流程，SpringBoot工程构建、前后端分离开发模式，使用Postman调试工具。}
+% \end{itemize}
+\datedsubsection{\textbf{拼团购物营销服务系统}}{}
+\begin{itemize}[parsep=0ex]
+  {\small 
+  \item \textbf{项目架构:} DDD领域驱动设计、微服务设计、分布式架构、前后端分离技术
+  \vspace{0.1cm}
+  \item \textbf{核心技术:} SpringBoot、MyBatis、MySQL、Redis、RabbitMQ、动态配置中心（DCC）、普罗米修斯监控、Docker
+  \vspace{0.1cm}
+  \item \textbf{项目设计:} 本项目参考电商拼团购物场景，调研中大厂相关业务场景和技术架构方案，构建了小型购物商城微服务与拼团营销微服务。 支持商品下单、各类拼团营销优惠（直减、折扣等）。该系统以面向对象开发，运用DDD拆分领域边界，使用设计模式设计服务功能。提高系统的扩展性和可维护性。
+  \vspace{0.03cm}
+%  \item \textbf{核心设计:}  
+ \begin{enumerate}[leftmargin = 0.3em, topsep=2pt, itemsep=0pt, parsep=0pt]
+  \item 架构设计： 以 \textbf{DDD领域驱动设计}，按照系统功能流程，拆解服务边界。包括活动域、标签域、交易域。
+  \vspace{0.07cm}
+  \item 设计模式: 设计提炼通用的\textbf{责任链}、\textbf{规则树模型}，解决场景中多处需使用设计模式解耦复杂流程链路的调度。
+  \vspace{0.07cm}
+  \item 规则过滤: 拼团锁单场景，使用通用的责任链模型框架，\textbf{校验活动的有效性（状态、有效期）和用户的参与资格}; 拼团结算场景，使用通用的责任链模型框架，\textbf{校验渠道黑名单配置、拼团组队信息、交易时间属性}等。
+  \vspace{0.07cm}
+  \item 异步线程: 对拼团优惠试算流程进行优化。将原本加载营销类数据时采用的串行执行方式，调整为借助\textbf{异步线程并行执行}, 进而提升整体拼团优惠试算的响应速度,同时也提高了用户体验。
+  \vspace{0.07cm}
+  \item 功能方案: \ding{172}通过\textbf{Redis内置发布订阅模型}，结合 SpringAOP切面以及反射，以自定义注解的方式控制属性信息\textbf{动态配置}。减少系统与Redis的IO交互，提高对高频场景属性值的使用时间效率；\ding{173}设计拼团组队结算的\textbf{HTTP/RPC、MQ 双重手段}，满足拼团微服务和购物商城微服务的不同方式对接，增强系统的适配性。同时为了保证整体方案的可靠性，在结算触达时，先异步多线程方式即时触发回调,再通过业务一致性定时任务数据补偿校验；\ding{174}抽象通用函数式缓存分级设计，并可结合\textbf{扳手工程DCC动态配置}，处理缓存降级到DB设计；\ding{175}以 \textbf{AI MCP+ELK+普罗米修斯监控}，分析错误日志和异常监控，动态化展示监控报表。
+\end{enumerate}
+}
+\end{itemize}
+
+
+\section{项目作品}
+\datedsubsection{\textbf{AI Agent学习项目}}{}
+\begin{itemize}
+  {\small
+
+  \vspace{0.1cm}
+  \item \textbf{核心技术：}  SpringBoot、 SpringAI、 Ollama、 OpenAI API、 PostgreSQL (向量库)、 Redis、 Docker、 Nginx
+
+  \vspace{0.1cm}
+%  \item \textbf{核心设计:}  
+  \item \textbf{项目设计:} 基于\textbf{Ollama DeepSeek大模型}构建的增强型RAG知识库与Agent智能体系统，旨在提升软件开发全周期工程交付效率。核心功能包括文档及Git代码库深度解析、向量化检索与智能问答,并集成Spring AI MCP框架对接外部服务（自动发送CSDN推文、微信公众号推送消息）。
+
+ \begin{enumerate}[leftmargin = 0.3em, topsep=2pt, itemsep=0pt, parsep=0pt]
+  \item  RAG核心: 设计后端双层架构；基于Spring AI实现对Ollama DeepSeek及OpenAI等多模型的策略化对接、文本向量生成、解析与存储（PostgreSQL）。
+
+  \vspace{0.1cm}
+%  \item \textbf{核心设计:}  
+  \item 代码知识库构建： 基于\textbf{JGit}实现Git代码库自动化克隆、解析、智能切割及向量化入库。
+  \vspace{0.1cm}
+  \item 交互优化： Redis存储知识库标签与元数据；基于SpringWebFlux开发流式会话接口，提升AI交互实时性。
+  \vspace{0.1cm}
+  \item MCP集成： 引入并集成\textbf{SpringAI MCP框架}，借助主流大模型产品开发简易前端界面，利用SpringAI构建MCP后端服务，构建基于AI对话实现\textbf{文本文件构建、CSDN文章发布及微信公众号消息推送}等MCP服务。
+  \vspace{0.1cm}
+  \item DevOps与部署： 利用Docker、Nginx完成整个项目的部署。
+ \end{enumerate}
+
+
+  }
+\end{itemize}
+
+  \vspace{0.2cm}
+
+
+\datedsubsection{\textbf{洪涝预警及可视化平台 (GeoAI-Lab实验室项目)}}{}
+\begin{itemize}
+  {\small
+
+\vspace{0.1cm}
+\item \textbf{项目简介:} 
+在气候变化加剧、城市洪涝风险频发的背景下，传统洪涝模拟工具已难以满足精细化、实时化的应急需求。本项目聚焦城市洪涝预警场景，以 \textbf{“物理模型+AI 赋能”} 为核心路径，突破传统模拟效率瓶颈：   
+\vspace{0.2cm}
+\item \textbf{技术破局:} 重构洪涝模拟范式。针对传统LisFlood物理模型 计算效率低、模块耦合度高的痛点，对模型进行解耦重构，实现模块独立迭代与灵活扩展；引入 \textbf{时空注意力机制}，设计分层空间特征提取网络，对淹没范围预测精度进行端到端优化；通过模型加速迁移，将原基于CPU的模式，重构为适配GPU并行计算的 \textbf{ST-Flood}深度学习模型， 计算效率近100 倍提升，破解“模拟慢、难实时”的行业难题。  
+
+\vspace{0.2cm}
+
+\item \textbf{平台落地:} 全栈技术协同赋能。基于“算法突破”构建平台技术底座，后端采用FastAPI框架，结合GeoServer服务动态发布淹没范围；前端基于Vue2+Leaflet，打造“数据可视化 - 空间分析 - 应急决策”一体化GIS平台，覆盖洪涝风险“动态监测→模拟推演→应急响应”全流程。 
+
+  \vspace{0.2cm}
+\item \textbf{价值延伸:}支撑城市韧性建设。平台已部署至 \textbf{自然资源部超大城市时空大数据分析应用重点实验室}，通过“物理模型解耦 + AI 加速 + 全栈平台落地”，为城市防洪减灾提供智能算法工具+可视化决策平台双支撑，助力提升超大城市“洪涝预警响应速度、应急决策科学性”，赋能城市安全韧性建设。  
+
+  }
+
+\end{itemize}
+
+
+% \begin{onehalfspacing}
+% \end{onehalfspacing}
+
+% \datedsubsection{\textbf{DID-ACTE} 荷兰莱顿}{2015年}
+% \role{本科毕业设计}{LIACS 交换生}
+% 利用结巴分词对中国古文进行分词与词性标注，用已有领域知识训练形成 classifier 并对结果进行调优
+% \begin{onehalfspacing}
+% \begin{itemize}
+%   \item 利用结巴分词对中国古文进行分词与词性标注
+%   \item 利用已有领域知识训练形成 classifier, 并用分词结果进行测试反馈
+%   \item 尝试不同规则，对 classifier 进行调优
+% \end{itemize}
+% \end{onehalfspacing}
+
+\vspace{0.2cm}
+\section{科研论文}
+\begin{itemize}[parsep=0.2ex]
+
+\vspace{0.2cm}
+  %   \item LeetCodeOJ Solutions, \textit{https://github.com/hijiangtao/LeetCodeOJ}
+  {\small
+  \item Song Z, \textbf{Cheng Z}, Li Y, et al. MDG625: A daily high-resolution meteorological dataset drived by geopotential-guided attention network in Asia (1940–2023)[J]. Earth System Science Data Discussions, 2024, 2024: 1-18.~~\textbf{\textit{(SCI Top, IF:11.4)}}
+
+\vspace{0.2cm}
+  \item Li J, Yuan L, Hu Y, Xu A, \textbf{Cheng Z}, et al. Flood simulation using LISFLOOD and inundation effects: A case study of Typhoon In-Fa in Shanghai. Science of The Total Environment, 2024, 954: 176372.
+        }
+\end{itemize}
+
+\vspace{0.1cm}
+\section{证书奖项}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  %   \item LeetCodeOJ Solutions, \textit{https://github.com/hijiangtao/LeetCodeOJ}
+  {\small
+  \item 外语证书——CET-6
+  \item UTC无人机飞手证
+  \item “互联网+”大赛银奖——「勤兼精英」家教信息管理系统
+  \item MapGIS国赛三等奖与MapGIS工程师证书
+  \item 软件著作权——「狸桥地学数据库管理系统」
+  \item 软件著作权——「人体外骨骼协同控制系统」 
+  % \item 软件著作权——「狸桥地学数据库管理系统」，2023年5月
+  \item \textbf{华为杯}第二十一届中国研究生数学建模竞赛\textbf{全国三等奖}（建模手与编程手)}
+\end{itemize}
+
+% \section{\faHeartO\ 项目/作品摘要}
+% \section{项目/作品摘要}
+% \datedline{\textit{An Integrated Version of Security Monitor Vis System}, https://hijiangtao.github.io/ss-vis-component/ }{}
+% \datedline{\textit{Dark-Tech}, https://github.com/hijiangtao/dark-tech/ }{}
+% \datedline{\textit{融合社交网络数据挖掘的电视节目可视化分析系统}, https://hijiangtao.github.io/variety-show-hot-spot-vis/}{}
+% \datedline{\textit{LeetCodeOJ Solutions}, https://github.com/hijiangtao/LeetCodeOJ}{}
+% \datedline{\textit{Info-Vis}, https://github.com/ISCAS-VIS/infovis-ucas}{}
+
+\vspace{0.2cm}
+\section{社区参与}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item 参与Python开源社区，发布Pypi开源项目\textbf{「willchan」}—深度学习与时空数据处理Python工具库。
+  \item 参与人工智能气象社区 ——「和鲸社区」, 基于伏羲气象大模型实现模型本地化运转架构。
+  \item 参加中科院大气物理研究所举办的第二届地球系统数值模拟科学大会，并做题为「基于时空注意力网络的CLDAS气象要素预测」的报告。
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
