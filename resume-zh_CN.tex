@@ -35,7 +35,7 @@
 \vspace{0.1cm}
 \datedsubsection{
   {\large \textbf{合肥工业大学(211)}}，地理信息科学}{2018.09 - 2022.06}
-{\small GPA: 2.99~~(40\%)，科技竞赛奖2次，软件著作权2个\\
+{\small GPA: 3.00~~(50\%)，科技竞赛奖2次，软件著作权2个\\
   主修课程: 空间数据结构、空间数据库、面向对象程序设计、WebGIS原理与开发}
 % 国家励志奖学金，
 
@@ -102,6 +102,16 @@
 %   {\small \item 简介: 使用SpringBoot、Mybatis和 MySQL实现了CRUD操作和分页查询功能，并集成阿里云OSS进行用户数据存储与管理。同时，基于JWT实现了令牌认证与登录校验，增强了系统安全性。通过应用过滤器和拦截器，优化了请求和响应处理过程，提升了系统性能与可扩展性。
 %   \item 收获: 了解Java后端开发流程，SpringBoot工程构建、前后端分离开发模式，使用Postman调试工具。}
 % \end{itemize}
+
+
+  \vspace{0.1cm}
+\datedsubsection{\textbf{基于全色注意力引导的多光谱影像超分辨率}}{{}}
+\begin{itemize}[parsep=0.2ex]
+  {\small 
+  \item \textbf{简介:} 面向遥感卫星的高分辨率全色（PAN）与低分辨率多光谱（LRMS）图像，研究基于全色影像引导的注意力模块（PanAB），结合窗口注意力(WA)、滑动窗口注意力(SWA)与长距离注意力（LLA）算法，实现高分辨率多光谱（HRMS）图像生成。 
+  \item \textbf{结论:} 经过不断优化迭代模型结构，最终各项指标在该任务领域前列水平。截至2025年6月1日 ，峰值信噪比（PSNR）达 48.855dB、结构相似性指数（SSIM）为 0.992 ，于任务领域内\textbf{最优(SOTA)}。 }
+\end{itemize}
+
 \datedsubsection{\textbf{拼团购物营销服务系统}}{}
 \begin{itemize}[parsep=0ex]
   {\small 
@@ -116,17 +126,10 @@
   \item 架构设计： 以 \textbf{DDD领域驱动设计}，按照系统功能流程，拆解服务边界。包括活动域、标签域、交易域。
   \vspace{0.07cm}
   \item 设计模式: 设计提炼通用的\textbf{责任链}、\textbf{规则树模型}，解决场景中多处需使用设计模式解耦复杂流程链路的调度。
-  \vspace{0.07cm}
-  \item 规则过滤: 拼团锁单场景，使用通用的责任链模型框架，校验活动的有效性（状态、有效期）和用户的参与资格; 拼团结算场景，使用通用的责任链模型框架，校验渠道黑名单配置、拼团组队信息、交易时间属性等。
-  \vspace{0.07cm}
-  \item 异步线程: 对拼团优惠试算流程进行优化。将原本加载营销类数据时采用的串行执行方式，调整为借助异步线程并行执行, 提升试算响应速度和用户体验。
-  \vspace{0.07cm}
-  \item 功能方案: \ding{172}通过Redis内置发布订阅模型，以自定义注解控制属性信息\textbf{动态配置(DCC)},提高对高频场景属性值的使用时间效率；\ding{173}设计拼团组队结算的\textbf{HTTP、MQ 双重手段}，满足拼团微服务和购物商城微服务的不同方式对接，增强系统的适配性。\ding{174}设计\textbf{Redis无锁化拼团库存抢占和恢复库存处理}，减轻数据库行锁独占的压力，提高系统吞吐量。\ding{175}抽象通用函数式缓存分级设计，并可结合扳手工程DCC动态配置，处理缓存降级到DB设计；\ding{176}以AI MCP+ELK+普罗米修斯监控，分析错误日志和异常监控，动态化展示监控报表。
+  \item 功能方案: \ding{172}通过Redis内置发布订阅模型，以自定义注解控制属性信息\textbf{动态配置(DCC)},提高对高频场景属性值的使用时间效率；\ding{173}设计拼团组队结算的\textbf{HTTP、MQ 双重手段}，满足拼团微服务和购物商城微服务对接。
 \end{enumerate}
 }
 \end{itemize}
-
-
 \section{项目作品}
 \datedsubsection{\textbf{AI Agent学习项目}}{}
 \begin{itemize}
@@ -200,7 +203,10 @@
   %   \item LeetCodeOJ Solutions, \textit{https://github.com/hijiangtao/LeetCodeOJ}
   {\small
   \item Song Z, \textbf{Cheng Z}, Li Y, et al. MDG625: A daily high-resolution meteorological dataset drived by geopotential-guided attention network in Asia (1940–2023)[J]. Earth System Science Data Discussions, 2024, 2024: 1-18.~~\textbf{\textit{(SCI Top, IF:11.4)}}
-  ()
+
+
+  \vspace{0.1cm}
+  \textbf{简介:} 为解决原位观测稀缺区域水文气象需求，本研究基于 ERA5、CLDAS 数据集，研发融合注意力深度学习的气象降尺度方法 GeoAN，生成覆盖亚洲的 MDG625 数据集，成果发表于 SCI Top 期刊 ESSD，助力亚洲气候研究与气象再分析精度提升。
 
 \vspace{0.2cm}
   \item Li J, Yuan L, Hu Y, Xu A, \textbf{Cheng Z}, et al. Flood simulation using LISFLOOD and inundation effects: A case study of Typhoon In-Fa in Shanghai. Science of The Total Environment, 2024, 954: 176372.
