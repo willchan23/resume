@@ -44,25 +44,26 @@
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.2ex]
 
-  \item \textbf{编程语言与框架}: 了解Java~(JVM、SpringBoot、Mybatis)~/~了解Python~(Fastapi、PyTorch)~/~了解SQL~
+  \item \textbf{编程语言与框架}: 熟悉Java~(JVM、SpringBoot、Mybatis)~/~了解Python~(Fastapi、PyTorch)~/~熟悉SQL~
   \vspace{0.1cm}
-  \item \textbf{其它技术}: 了解Linux / 了解MySQL / 了解Redis / 了解Git / 了解Vim / 了解Docker / 了解RabbitMQ
+  \item \textbf{其它技术}: 了解Linux / 了解MySQL / 了解Redis / 了解RabbitMQ / 了解Git / 了解Vim / 了解Docker 
   \vspace{0.1cm}
-  \item \textbf{关键词}: 后端开发，AI软件开发，深度学习，计算机视觉，数据爬虫
+  \item \textbf{关键词}: 后端开发，AI软件开发，测试开发，深度学习，计算机视觉，数据爬虫
 
 \end{itemize}
 % \vspace{0.2cm}
 
 \section{实习经历}
+  \vspace{0.1cm}
 \datedsubsection{
-  {\large \textbf{字节跳动}}，TikTok国际支付，测试开发工程师}{2025.04 - 2025.06}
+  {\large \textbf{字节跳动}}，TikTok国际支付，测试开发}{2025.04 - 2025.06}
 \begin{itemize}[parsep=0.2ex]
   {\small 
-  \item \textbf{WalletEngine服务维护}: 用于测试过程钱包造数，通过模块化设计提升钱包业务造数效率。
-  \vspace{0.1cm}
-  \item \textbf{Pytest自动化框架开发}: 维护FundProd场景内自动化用例与服务，并针对基于供应商付款新链路的Transfer服务，构建自动化测试用例架构，完成核心RPC接口的标准化测试覆盖，助力下游服务联调效率。   
+  \item \textbf{Pytest自动化开发}: 维护FundProd场景内自动化用例与服务，并针对基于供应商付款新链路的Transfer服务，构建自动化测试用例架构，完成核心RPC接口的标准化测试覆盖，助力下游服务联调效率。   
   \vspace{0.1cm}
   \item \textbf{RTC场景测试}: 围绕RTC(Refund to Credit)模块业务场景，设计并执行多维度测试方案，覆盖80+正常流程及异常边界情况，累计发现并跟进解决多项影响业务稳定性的潜在问题。}
+  \vspace{0.1cm}
+  \item \textbf{WalletEngine服务维护}: 用于测试过程钱包造数，通过模块化设计提升钱包业务造数效率。
 \end{itemize}
 % \vspace{0.2cm}
 
@@ -77,15 +78,20 @@
 %   }
 % \end{itemize}
 % \vspace{0.2cm}
-\datedsubsection {{\large \textbf{蔚来汽车}}，数字系统，软件开发工程师}{2024.12 - 2025.03}
+
+ \vspace{0.05cm}
+\datedsubsection {{\large \textbf{蔚来汽车}}，数字系统，软件开发}{2024.12 - 2025.03}
 \begin {itemize}
 {\small
 \item \textbf {工作内容:} 从0开发部门级中台工具，基于飞书JavaSDK与原生 API，解决汽车终端与机房物理隔离导致的日志获取难题，依托终端联网能力构建自动化日志处理体系，实现上下游协同。
+ \vspace{0.1cm}
 \item \textbf {核心功能:}
 设计手动触发与定时任务兜底策略抓取终端日志，采用分片上传策略同步至飞书云文档，通过飞书机器人自动转发问题日志至下游AI MCP域进行日志解析，并溯源至具体业务域，实现 "终端采集-云端存储-智能解析-域级溯源"闭环；
+ \vspace{0.1cm}
 \item \textbf {业务价值:} 替代人工拷贝日志低效模式，将日志获取时效从小时级提升至分钟级；通过与 AI MCP 团队协同，实现日志解析专业化分工；依托飞书机器人自动转发与域级溯源能力，提升跨团队问题排查效率 30\% 以上。
 }
 \end {itemize}
+ \vspace{0.05cm}
 \section{项目作品}
 % \datedsubsection{\textbf{Tlias智能学习辅助管理系统}}{}
 % \begin{itemize}[parsep=0.2ex]
@@ -109,15 +115,16 @@
   \vspace{0.07cm}
   \item 规则过滤: 拼团锁单场景，使用通用的责任链模型框架，校验活动的有效性（状态、有效期）和用户的参与资格; 拼团结算场景，使用通用的责任链模型框架，校验渠道黑名单配置、拼团组队信息、交易时间属性等。
   \vspace{0.07cm}
-  \item 异步线程: 对拼团优惠试算流程进行优化。将原本加载营销类数据时采用的串行执行方式，调整为借助异步线程并行执行, 进而提升整体拼团优惠试算的响应速度,同时也提高了用户体验。
+  \item 异步线程: 对拼团优惠试算流程进行优化。将原本加载营销类数据时采用的串行执行方式，调整为借助异步线程并行执行, 提升整体拼团优惠试算的响应速度和用户体验。
   \vspace{0.07cm}
-  \item 功能方案: \ding{172}通过\textbf{Redis内置发布订阅模型}，以自定义注解的方式控制属性信息\textbf{动态配置（DCC）}。减少系统与Redis的IO交互，提高对高频场景属性值的使用时间效率；\ding{173}设计拼团组队结算的\textbf{HTTP、MQ 双重手段}，满足拼团微服务和购物商城微服务的不同方式对接，增强系统的适配性。同时为了保证整体方案的可靠性，在结算触达时，先异步多线程方式即时触发回调,再通过业务一致性定时任务数据补偿校验；\ding{174}抽象通用函数式缓存分级设计，并可结合扳手工程DCC动态配置，处理缓存降级到DB设计；\ding{175}以AI MCP+ELK+普罗米修斯监控，分析错误日志和异常监控，动态化展示监控报表。
+  \item 功能方案: \ding{172}通过\textbf{Redis内置发布订阅模型}，以自定义注解的方式控制属性信息\textbf{动态配置（DCC）}提高对高频场景属性值的使用时间效率；\ding{173}设计拼团组队结算的\textbf{HTTP、MQ 双重手段}，满足拼团微服务和购物商城微服务的不同方式对接，增强系统的适配性。同时为了保证整体方案的可靠性，在结算触达时，先异步多线程方式即时触发回调,再通过业务一致性定时任务数据补偿校验；\ding{174}设计\textbf{Redis无锁化拼团库存抢占和恢复库存处理}，减轻数据库压力\ding{175}抽象通用函数式缓存分级设计，并可结合扳手工程DCC动态配置，处理缓存降级到DB设计；\ding{176}以AI MCP+ELK+普罗米修斯监控，分析错误日志和异常监控，动态化展示监控报表。
 \end{enumerate}
 }
 \end{itemize}
 
 
 \section{项目作品}
+  \vspace{0.1cm}
 \datedsubsection{\textbf{AI Agent学习项目}}{}
 \begin{itemize}
   {\small
@@ -138,9 +145,8 @@
   \vspace{0.1cm}
   \item 交互优化： Redis存储知识库标签与元数据；基于SpringWebFlux开发流式会话接口，提升AI交互实时性。
   \vspace{0.1cm}
-  \item MCP集成： 引入并集成\textbf{SpringAI MCP框架}，借助主流大模型产品开发简易前端界面，利用SpringAI构建MCP后端服务，构建基于AI对话实现\textbf{文本文件构建、CSDN文章发布及微信公众号消息推送}等MCP服务。
+  \item MCP集成： 引入并集成\textbf{SpringAI MCP框架}，借助主流大模型产品开发简易前端界面，利用SpringAI构建MCP后端服务，构建基于AI对话实现文本文件构建、CSDN文章发布及微信公众号消息推送等MCP服务。
   \vspace{0.1cm}
-  \item DevOps与部署： 利用Docker、Nginx完成整个项目的部署。
  \end{enumerate}
 
 
@@ -158,15 +164,11 @@
 \item \textbf{项目简介:} 
 在气候变化加剧、城市洪涝风险频发的背景下，传统洪涝模拟工具已难以满足精细化、实时化的应急需求。本项目聚焦城市洪涝预警场景，以 \textbf{“物理模型+AI 赋能”} 为核心路径，突破传统模拟效率瓶颈：   
 \vspace{0.2cm}
-\item \textbf{技术破局:} 重构洪涝模拟范式。针对传统LisFlood物理模型 计算效率低、模块耦合度高的痛点，对模型进行解耦重构，实现模块独立迭代与灵活扩展；引入 \textbf{时空注意力机制}，设计分层空间特征提取网络，对淹没范围预测精度进行端到端优化；通过模型加速迁移，将原基于CPU的模式，重构为适配GPU并行计算的 \textbf{ST-Flood}深度学习模型， 计算效率近100 倍提升，破解“模拟慢、难实时”的行业难题。  
+\item \textbf{算法设计:} 重构洪涝模拟范式。针对传统LisFlood物理模型 计算效率低、模块耦合度高的痛点，对模型进行解耦重构，实现模块独立迭代与灵活扩展；引入 \textbf{时空注意力机制}，设计分层空间特征提取网络，对淹没范围预测精度进行端到端优化；通过模型加速迁移，将原基于CPU的模式，重构为适配GPU并行计算的 \textbf{ST-Flood}深度学习模型， 计算效率近100 倍提升，破解“模拟慢、难实时”的行业难题。  
 
 \vspace{0.2cm}
 
-\item \textbf{平台落地:} 全栈技术协同赋能。基于“算法突破”构建平台技术底座，后端采用FastAPI框架，结合GeoServer服务动态发布淹没范围；前端基于Vue2+Leaflet，打造“数据可视化 - 空间分析 - 应急决策”一体化GIS平台，覆盖洪涝风险“动态监测→模拟推演→应急响应”全流程。 
-
-  \vspace{0.2cm}
-\item \textbf{价值延伸:}支撑城市韧性建设。平台已部署至 \textbf{自然资源部超大城市时空大数据分析应用重点实验室}，通过“物理模型解耦 + AI 加速 + 全栈平台落地”，为城市防洪减灾提供智能算法工具+可视化决策平台双支撑，助力提升超大城市“洪涝预警响应速度、应急决策科学性”，赋能城市安全韧性建设。  
-
+\item \textbf{平台开发:} 基于“算法突破”构建平台技术底座，后端采用FastAPI框架，结合GeoServer服务动态发布淹没范围；前端基于Vue2+Leaflet，打造“数据可视化 - 空间分析 - 应急决策”一体化GIS平台，覆盖洪涝风险“动态监测→模拟推演→应急响应”全流程。平台已部署至自然资源部超大城市时空大数据分析应用重点实验室。
   }
 
 \end{itemize}
@@ -206,14 +208,15 @@
 \begin{itemize}[parsep=0.2ex]
   %   \item LeetCodeOJ Solutions, \textit{https://github.com/hijiangtao/LeetCodeOJ}
   {\small
-  \item 外语证书——CET-6
+  \item 英语证书——CET-6
+  \item \textbf{华为杯}第二十一届中国研究生数学建模竞赛\textbf{全国三等奖}
   \item UTC无人机飞手证
   \item “互联网+”大赛银奖——「勤兼精英」家教信息管理系统
   \item MapGIS国赛三等奖与MapGIS工程师证书
   \item 软件著作权——「狸桥地学数据库管理系统」
   \item 软件著作权——「人体外骨骼协同控制系统」 
   % \item 软件著作权——「狸桥地学数据库管理系统」，2023年5月
-  \item \textbf{华为杯}第二十一届中国研究生数学建模竞赛\textbf{全国三等奖}（建模手与编程手)}
+}
 \end{itemize}
 
 % \section{\faHeartO\ 项目/作品摘要}
